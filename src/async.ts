@@ -115,7 +115,7 @@ const exercise6 = () =>{
  async function getDataNumber(){
    await myPromise
    .then((data)=>{
-     return Number(data) + 1 /* duda. ¿este parseo esta bien hecho? */
+     return Number(data) + 1 /* duda. ¿este casting esta bien hecho? */
    })
    .then((data)=>{
      console.log(data);     
