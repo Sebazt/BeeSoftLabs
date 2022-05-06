@@ -84,7 +84,7 @@ const exercise5 = () =>{
   })
 
   async function getData(){
-    await myPromise
+    const data = await myPromise
     .then((data)=>{
       console.log("I'm trying know that var data have: "+data);    
       return `This is a ${data}`
@@ -113,7 +113,7 @@ const exercise6 = () =>{
  })
 
  async function getDataNumber(){
-   await myPromise
+   const dataNumber = await myPromise
    .then((data)=>{
      return Number(data) + 1 /* duda. ¿este casting esta bien hecho? */
    })
